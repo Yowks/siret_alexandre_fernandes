@@ -1,0 +1,15 @@
+{
+  "apps" : [{
+    "name": "siret-invader",
+    "script": "app/server.js",
+    "instances": 4,
+    "exec_mode": "cluster",
+    "error_file": "process-logs/pm2-error.log",
+    "out_file": "process-logs/pm2.log",
+    "dbHost": "localhost",
+    "dbPort": "27017",
+    "dbName": "siret",
+    "csvDirOutput": "output",
+    "cropSize": 10000
+  }]
+}
