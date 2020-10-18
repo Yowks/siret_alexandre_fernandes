@@ -9,7 +9,7 @@
     "dbHost": "localhost",
     "dbPort": "27017",
     "dbName": "siret",
-    "csvDirOutput": "output",
+    "Output": "output",
     "cropSize": 10000
   }]
 }

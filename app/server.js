@@ -1,7 +1,7 @@
 const MongoClient  = require('mongodb');
 const jobProcessFile = require('./controllers/manage_data');
-const appConfig = JSON.parse(fs.readFileSync(__dirname + '/../../process.json')).apps[0];
 const fs = require('fs');
+const appConfig = JSON.parse(fs.readFileSync(__dirname + '/../process.json')).apps[0];
 
 const url = `mongodb://${appConfig.dbHost}:${appConfig.dbPort}/${appConfig.dbName}`;
 const pmId = process.env.pm_id || null;

@@ -99,7 +99,7 @@ const listenProcesses = () => {
     });
     bus.on('job::pauseProcessing', () => {
       pmIds.forEach((pmId) => {
-        actions.sendPauseToInstance(pmId);
+        actions.pauseInstance(pmId);
         console.log(pmId, 'job::pauseProcessing');
       });
       console.log('Pause processes');
