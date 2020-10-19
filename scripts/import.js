@@ -5,7 +5,6 @@ const log = require('log-to-file');
 const config = require("../config");
 const utils = require("../functions");
 
-
 /**
  * Create dirs and files
  */
@@ -19,8 +18,6 @@ dirs.forEach(function (name) {
 	}
 });
 
-
-
 /**
  * Check if dataset file exist
  */
@@ -29,7 +26,6 @@ if (!fs.existsSync(config.path.import_file)) {
 	log(`The dataset file ${config.path.import_file} was not found`, 'logs/import.log');
 	return false;
 }
-
 
 /**
  * Split file into multiple small files (-50Mo)
@@ -46,7 +42,7 @@ csvSplitStream.split(
 )
 .then(csvSplitResponse => {
 	utils.writeHistory(csvSplitResponse);
-	
+
 	setTimeout(function (argument) {
 		let end 	= new Date() - start,
 			hrend	= process.hrtime(hrstart);
