@@ -25,7 +25,7 @@ The `.env` file contains the acces to the database and the table.
 
 - `./config.js` file
 To change file name to split, modifiy the line `import_file`.
-Also if you want to limit the number of cores working on the project you can change the `core`line into the number you want or if you want to have the max perfomance replace by `"max"`.
+Also if you want to limit the number of cores working on the project you can change the `instances`line into the number you want or if you want to have the max perfomance replace by `"max"`.
 
 For instance, you may want to use the maximum number of cores of your computer for the processing, simply put 
 ```json
@@ -62,7 +62,7 @@ split : {
 },
 
 workers : {
-    core                : "max",
+    core                : 4,
     bulk_limit          : 50000
 },
 

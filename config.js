@@ -3,7 +3,7 @@ module.exports = {
       name                  : 'sirets-invader',
       watch                 : false,
       script                : './scripts/workers.js',
-      instances             : 4,
+      instances             : "max",
       exec_mode             : 'cluster',
       max_memory_restart    : '1G'
     },
@@ -21,7 +21,7 @@ module.exports = {
     },
 
     workers : {
-      core                : "max",
+      core                : 4,
       bulk_limit          : 50000
     },
 
