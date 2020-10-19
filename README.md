@@ -1,5 +1,20 @@
-# siretsinvaders
-:space_invader: Sirets Invaders :space_invader:
+# :space_invader: siretsinvaders :space_invader:
+ 
+ Sirets Invaders 
+
+# Requirements
+
+Prerequisites: [Node.js](https://nodejs.org/en/) (>=8.x), yarn or npm.
+
+You have to download the siret file [StockEtablissement_utf8.csv](http://files.data.gouv.fr/insee-sirene/StockEtablissement_utf8.zip) and put it in the data directory of this project.
+
+# Installation
+Use `git clone` to install this app.
+
+```
+git clone https://github.com/Yowks/siret_alexandre_fernandes
+npm install
+```
 
 # Configuration
 
@@ -55,14 +70,6 @@ delay : {
     between_workers     : 2000,
     between_check_end   : 2000
 }
-```
-
-# Installation
-Use `git clone` to install this app.
-
-```
-git clone https://github.com/Yowks/siret_alexandre_fernandes
-npm install
 ```
 
 # Start
