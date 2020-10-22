@@ -1,5 +1,6 @@
 node_modules
 package-lock.json
-logs
-data/*
+csv/
 .DS_Store
+process-logs/
+StockEtablissement_utf8.csv

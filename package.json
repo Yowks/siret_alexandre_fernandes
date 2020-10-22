@@ -1,22 +1,22 @@
 {
-  "name": "siretsinvaders",
+  "license": "MIT",
+  "name": "siret-invader",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "split": "node ./scripts/import.js",
-    "start": "node ./scripts/main.js"
-  },
-  "keywords": [],
-  "author": "Fernandes Alexandre",
-  "license": "ISC",
   "dependencies": {
-    "csv-parser": "^2.3.3",
-    "csv-split-stream": "^1.0.2",
-    "dotenv": "^8.2.0",
-    "log-to-file": "^2.0.2",
-    "mongoose": "^5.10.3",
-    "pm2": "^4.4.1"
+    "chalk": "^2.4.2",
+    "clear": "^0.1.0",
+    "figlet": "^1.2.3",
+    "mongodb": "^3.2.7",
+    "pm2": "^3.5.1",
+    "split": "^1.0.1"
+  },
+  "scripts": {
+    "server": "node entry.js",
+    "manager": "node siretManager.js"
+  },
+  "devDependencies": {
+    "eslint": "5.3.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
   }
 }
