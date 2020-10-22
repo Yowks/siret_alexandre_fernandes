@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "split": "node ./scripts/import.js",
-    "start": "node ./scripts/main.js",
-    "pause": "node ./scripts/pause.js"
+    "start": "node ./scripts/main.js"
   },
   "keywords": [],
   "author": "Fernandes Alexandre",
